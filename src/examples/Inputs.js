@@ -4,7 +4,7 @@ const Inputs = ({id, description, onDescriptionChanged, onSubmit}) =>
   <form onSubmit={onSubmit}>
     <div className='form-group'>
       <label>ID:</label>
-      <input type='text' className='form-control' value={id}/>
+      <input type='text' className='form-control' value={id} readOnly={true}/>
     </div>
     <div className='form-group'>
       <label>Description:</label>

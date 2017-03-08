@@ -2,6 +2,7 @@ import React from 'react'
 import {render} from 'react-dom'
 import Slide from './presentation/Slide'
 import 'prismjs/themes/prism-dark.css'
+import 'font-awesome/css/font-awesome.css'
 import './styles/styles.scss'
 
 import agent from 'superagent'

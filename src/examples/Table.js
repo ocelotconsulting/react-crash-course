@@ -6,11 +6,13 @@ const Table = ({className, headers, children}) =>
     <thead>
       <tr>
         {headers.map((label, i) =>
-          <th>{label}</th>
+          <th key={i}>{label}</th>
         )}
       </tr>
     </thead>
-    {children}
+    <tbody>
+      {children}
+    </tbody>
   </table>
 
 Table.propTypes = {

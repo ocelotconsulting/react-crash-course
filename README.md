@@ -11,8 +11,8 @@ To start:
 
 ```
 # from your project folder or wherever you want
-# use the https if you don't have ssh set up for github
-git clone git@github.com:ocelotconsulting/react-crash-course.git
+# (or use SSH if you prefer)
+git clone https://github.com/ocelotconsulting/react-crash-course.git
 cd react-crash-course
 npm install 
 npm start

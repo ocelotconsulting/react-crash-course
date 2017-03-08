@@ -4,3 +4,8 @@ Any component can have optional nested content which is available as the prop *c
  your component or ignore any nested content.
  
 ___src/examples/Table.js
+
+Example usage:
+
+___src/examples/TableExample.js
+

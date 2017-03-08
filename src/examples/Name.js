@@ -1,4 +1,4 @@
-import React, {PropTypes} from 'react'
+import React, {PropTypes as T} from 'react'
 
 export default class Name extends React.Component {
   constructor (...args) {
@@ -39,7 +39,7 @@ Name.defaultProps = {
 }
 
 Name.propTypes = {
-  prompt: PropTypes.string
+  prompt: T.string
 }
 
 Name.displayName = 'Name'

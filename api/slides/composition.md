@@ -10,4 +10,3 @@ ___src/examples/TicTacToe.js
 Example usage:
 
 ___src/examples/TicTacToeExample.js
-

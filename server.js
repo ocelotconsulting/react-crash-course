@@ -5,8 +5,11 @@ const devMiddleware = require('webpack-dev-middleware')
 const hotMiddleware = require('webpack-hot-middleware')
 const webpack = require('webpack')
 
-
 app.use('/api', require('./api'))
+
+app.get('/server-page', require('./serverPage'))
+
+app.use('/images', express.static('images'))
 
 const compiler = webpack(require('./webpack.config'))
 

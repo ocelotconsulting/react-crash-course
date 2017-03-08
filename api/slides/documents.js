@@ -5,9 +5,12 @@ const Prism = require('prismjs')
 require('prismjs/components/prism-jsx')
 
 const slides = [
+  'title',
   'intro',
   'about',
   'es2015',
+  'jsx',
+  'code',
   'basics',
   'component',
   'propsVsState',
@@ -17,7 +20,11 @@ const slides = [
   'propTypes',
   'binding',
   'noJsx',
-  'lifeCycleMethods'
+  'lifeCycleMethods',
+  'collections',
+  'serverSideRendering',
+  'testing',
+  'finalWords'
 ]
 
 /*
@@ -50,6 +57,6 @@ const compileAndBind = markdown => {
 module.exports = slides.map(
   name => ({
     name,
-    html: compileAndBind(fs.readFileSync(`slides/${name}.md`, {encoding: 'utf8'}))
+    html: () => compileAndBind(fs.readFileSync(`api/slides/${name}.md`, {encoding: 'utf8'}))
   })
 )

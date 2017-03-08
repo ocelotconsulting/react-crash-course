@@ -5,7 +5,7 @@
   "description": "React Tutorial",
   "scripts": {
     "start": "node server",
-    "dev": "supervisor --debug -w server.js,index.html,slides -e md,js node server",
+    "dev": "supervisor --debug -w server.js,index.html,serverPage.js,api -e md,js node server",
     "test": "mocha",
     "test:dev": "mocha -w"
   },
@@ -27,7 +27,9 @@
     "express": "~4.15.2",
     "lodash": "^4.17.4",
     "marked": "^0.3.6",
-    "prismjs": "^1.6.0"
+    "prismjs": "^1.6.0",
+    "react": "~15.4.2",
+    "react-dom": "~15.4.2"
   },
   "devDependencies": {
     "babel-core": "~6.23.1",
@@ -50,9 +52,7 @@
     "font-awesome": "~4.7.0",
     "mocha": "~3.2.0",
     "node-sass": "~4.5.0",
-    "react": "~15.4.2",
     "react-addons-test-utils": "~15.4.2",
-    "react-dom": "~15.4.2",
     "sass-loader": "~6.0.0",
     "sinon": "~1.17.7",
     "sinon-as-promised": "~4.0.2",

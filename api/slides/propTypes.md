@@ -5,3 +5,8 @@ validation errors are output as console errors during development.  It's a good 
 for errors.
 
 ___src/examples/LinkButton.js
+
+Example usage:
+
+___src/examples/LinkButtonExample.js
+

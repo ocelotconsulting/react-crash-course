@@ -2,10 +2,10 @@ import React from 'react'
 
 const JsxFree = () =>
   React.createElement('div', {}, [
-    React.createElement('h4', {}, ['TODO']),
-    React.createElement('ul', {}, [
-      React.createElement('li', {}, ['Pick up dry cleaning']),
-      React.createElement('li', {}, ['Feed the cat'])
+    React.createElement('h4', {key: 0}, ['TODO']),
+    React.createElement('ul', {key: 1}, [
+      React.createElement('li', {key: 0}, ['Pick up dry cleaning']),
+      React.createElement('li', {key: 1}, ['Feed the cat'])
     ])
   ])
 
