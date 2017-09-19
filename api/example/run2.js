@@ -19,6 +19,19 @@ if (!source || !target) fail('expected source and target files')
 // you could also put in a check to make sure the target does not exist
 if (!fs.existsSync(source)) fail(`file not found: ${source}`)
 
+const parseRgb = input => {
+  const [r, g, b] = input.split(' ').map(Number)
+  return b * 65536 + g * 256 + r
+}
+
+const processLine = line => {
+  if (line.substr(7, 17) === 'statements.Colors') {
+    return line + parseRgb(line.substr(33, 15))
+  } else {
+    return line
+  }
+}
+
 // a function which simply copies a text file, line by line
 // uses the platform EOL (CRLF on windows)
 const run = async () => {
@@ -28,7 +41,7 @@ const run = async () => {
     const targetStream = fs.createWriteStream(target)
 
     const acceptLine = line => {
-      targetStream.write(line + EOL)
+      targetStream.write(processLine(line) + EOL)
       lineCount++
     }
 
