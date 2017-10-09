@@ -24,6 +24,7 @@ const slides = [
   'collections',
   'serverSideRendering',
   'testing',
+  'es2017',
   'finalWords'
 ]
 
