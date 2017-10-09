@@ -4,7 +4,7 @@ This is a dynamic presentation with embedded working code examples.
 
 ### Prerequisites
 
-+ Node 6.x.x (6.9 or higher)
++ Node 8.5.x (8.5.0 or higher)
 + Git
  
 To start:
