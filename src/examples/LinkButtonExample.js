@@ -8,9 +8,6 @@ const LinkButtonExample = () => (
   </LinkButton>
 )
 
-LinkButtonExample.displayName = 'LinkButtonExample'
-
 LinkButtonExample.propTypes = {}
 
 export default LinkButtonExample
-

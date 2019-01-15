@@ -1,5 +1,5 @@
 import React from 'react'
-import {shallow} from 'enzyme'
+import { shallow } from 'enzyme'
 import MineField from '../../src/examples/MineField'
 
 describe('MineField', () => {
@@ -13,4 +13,3 @@ describe('MineField', () => {
     component.find('LandMine').length.should.equal(2)
   )
 })
-

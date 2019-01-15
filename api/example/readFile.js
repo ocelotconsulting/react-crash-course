@@ -3,7 +3,7 @@ const readline = require('readline')
 
 module.exports = (fileName, acceptLine) => {
   const input = fs.createReadStream(fileName)
-  const lineReader = readline.createInterface({input})
+  const lineReader = readline.createInterface({ input })
 
   lineReader.on('line', acceptLine)
 
@@ -12,5 +12,3 @@ module.exports = (fileName, acceptLine) => {
     input.on('error', reject)
   })
 }
-
-

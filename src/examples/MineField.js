@@ -7,8 +7,6 @@ const MineField = () =>
     <LandMine message='bam'/>
   </div>
 
-MineField.displayName = 'MineField'
-
 MineField.propTypes = {}
 
 export default MineField

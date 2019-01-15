@@ -1,5 +1,5 @@
 const fs = require('fs')
-const {EOL} = require('os') // \n for *nix, \r\n for windows
+const { EOL } = require('os') // \n for *nix, \r\n for windows
 const readFile = require('./readFile')
 const closeStream = require('./closeStream')
 

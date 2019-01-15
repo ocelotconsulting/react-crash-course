@@ -20,9 +20,9 @@ app.use(devMiddleware(compiler, {
   noInfo: true
 }))
 
-app.use(hotMiddleware(compiler, {path: '/__webpack_hmr'}))
+app.use(hotMiddleware(compiler, { path: '/__webpack_hmr' }))
 
-const html = fs.readFileSync('index.html', {encoding: 'utf8'})
+const html = fs.readFileSync('index.html', { encoding: 'utf8' })
 
 app.get('/', (req, res) => res.redirect('/1'))
 

@@ -14,9 +14,6 @@ const TableExample = () =>
     </tr>
   </Table>
 
-TableExample.displayName = 'TableExample'
-
 TableExample.propTypes = {}
 
 export default TableExample
-

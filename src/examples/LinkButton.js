@@ -1,7 +1,8 @@
-import React, {PropTypes as T} from 'react'
+import React from 'react'
+import T from 'prop-types'
 import classnames from 'classnames'
 
-const LinkButton = ({className, disabled, onClick, children}) => {
+const LinkButton = ({ className, disabled, onClick, children }) => {
   const preventDefaultAndDelegate = event => {
     event.preventDefault()
     onClick(event)
@@ -13,8 +14,6 @@ const LinkButton = ({className, disabled, onClick, children}) => {
       <a href='#' className={className} onClick={preventDefaultAndDelegate}>{children}</a>
     )
 }
-
-LinkButton.displayName = 'LinkButton'
 
 LinkButton.propTypes = {
   // common pattern - allow consumer to specify a custom class name

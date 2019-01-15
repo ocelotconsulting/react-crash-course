@@ -2,6 +2,8 @@ import React from 'react'
 import Inputs from './Inputs'
 
 export default class InputsExample extends React.Component {
+  static propTypes = {}
+
   constructor (...args) {
     super(...args)
     this.state = {
@@ -9,9 +11,9 @@ export default class InputsExample extends React.Component {
     }
   }
 
-  render() {
-    const onDescriptionChanged = ({target: {value}}) =>
-      this.setState({description: value})
+  render () {
+    const onDescriptionChanged = ({ target: { value } }) =>
+      this.setState({ description: value })
 
     return (
       <Inputs id='42' description={this.state.description}
@@ -20,8 +22,3 @@ export default class InputsExample extends React.Component {
     )
   }
 }
-
-InputsExample.displayName = 'InputsExample'
-
-InputsExample.propTypes = {}
-

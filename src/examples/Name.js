@@ -1,6 +1,15 @@
-import React, {PropTypes as T} from 'react'
+import React from 'react'
+import T from 'prop-types'
 
 export default class Name extends React.Component {
+  static propTypes = {
+    prompt: T.string
+  }
+
+  static defaultProps = {
+    prompt: 'Enter your name:'
+  }
+
   constructor (...args) {
     super(...args)
     this.state = {
@@ -33,13 +42,3 @@ export default class Name extends React.Component {
     )
   }
 }
-
-Name.defaultProps = {
-  prompt: 'Enter your name:'
-}
-
-Name.propTypes = {
-  prompt: T.string
-}
-
-Name.displayName = 'Name'

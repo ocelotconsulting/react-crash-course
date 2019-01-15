@@ -1,8 +1,9 @@
-import React, {PropTypes as T} from 'react'
+import React from 'react'
+import T from 'prop-types'
 import Example from './Example'
 import examples from '../examples/all'
 
-const Slide = ({slideNumber, count, name, html}) => {
+const Slide = ({ slideNumber, count, name, html }) => {
   const linkProps = (label, index) => ({
     className: label,
     label,
@@ -21,7 +22,7 @@ const Slide = ({slideNumber, count, name, html}) => {
     }
   }
 
-  const handleKeyUp = ({keyCode}) => {
+  const handleKeyUp = ({ keyCode }) => {
     const action = actionFor(keyCode)
     if (action) {
       window.location = action.href
@@ -36,7 +37,7 @@ const Slide = ({slideNumber, count, name, html}) => {
   return (
     <div className='slide' tabIndex={1} onKeyUp={handleKeyUp}
          ref={div => div && div.focus()}>
-      <div className='content' dangerouslySetInnerHTML={{__html: html}}/>
+      <div className='content' dangerouslySetInnerHTML={{ __html: html }}/>
       <hr/>
       {ExampleComponent && (
         <Example>
@@ -50,8 +51,6 @@ const Slide = ({slideNumber, count, name, html}) => {
     </div>
   )
 }
-
-Slide.displayName = 'Slide'
 
 Slide.propTypes = {
   slideNumber: T.number.isRequired,

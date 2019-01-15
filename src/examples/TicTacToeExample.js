@@ -10,8 +10,6 @@ const valueRows = [
 const TicTacToeExample = () =>
   <TicTacToe valueRows={valueRows}/>
 
-TicTacToeExample.displayName = 'TicTacToeExample'
-
 TicTacToeExample.propTypes = {}
 
 export default TicTacToeExample

@@ -1,16 +1,15 @@
-import React, {PropTypes as T} from 'react'
+import React from 'react'
+import T from 'prop-types'
 
-const ToDoList = ({items}) =>
+const ToDoList = ({ items }) =>
   <div className='todo-list'>
     <h4>TODO</h4>
     <ul>
-      {items.map(({id, description}) =>
+      {items.map(({ id, description }) =>
         <li key={id}>{description}</li>
       )}
     </ul>
   </div>
-
-ToDoList.displayName = 'ToDoList'
 
 ToDoList.propTypes = {
   items: T.arrayOf(T.object).isRequired

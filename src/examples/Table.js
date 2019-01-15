@@ -1,7 +1,8 @@
-import React, {PropTypes as T} from 'react'
+import React from 'react'
+import T from 'prop-types'
 import classnames from 'classnames'
 
-const Table = ({className, headers, children}) =>
+const Table = ({ className, headers, children }) =>
   <table className={classnames('table-striped', className)}>
     <thead>
       <tr>
@@ -21,4 +22,3 @@ Table.propTypes = {
 }
 
 export default Table
-

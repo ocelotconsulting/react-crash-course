@@ -1,4 +1,5 @@
-import React, {PropTypes as T} from 'react'
+import React from 'react'
+import T from 'prop-types'
 
 // values might be ['X', '', 'O'] for example
 export const TicTacToeRow = props =>
@@ -7,8 +8,6 @@ export const TicTacToeRow = props =>
       <td key={i}>{value}</td>
     )}
   </tr>
-
-TicTacToeRow.displayName = 'TicTacToeRow'
 
 TicTacToeRow.propTypes = {
   values: T.arrayOf(T.string).isRequired
@@ -22,8 +21,6 @@ const TicTacToe = props =>
     )}
     </tbody>
   </table>
-
-TicTacToe.displayName = 'TicTacToe'
 
 TicTacToe.propTypes = {
   valueRows: T.arrayOf(T.arrayOf(T.string)).isRequired

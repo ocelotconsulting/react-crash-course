@@ -1,7 +1,9 @@
-import React, {PropTypes as T} from 'react'
+/* eslint-disable no-unused-vars */
+import React from 'react'
+import T from 'prop-types'
 
 class StatelessClass extends React.Component {
-  render() {
+  render () {
     return (
       <h3>
         {this.props.title}
@@ -12,13 +14,11 @@ class StatelessClass extends React.Component {
 }
 
 // equivalent to the above
-const Stateless = ({title, subTitle}) =>
+const Stateless = ({ title, subTitle }) =>
   <h3>
     {title}
     <small>{subTitle}</small>
   </h3>
-
-Stateless.displayName = 'Stateless'
 
 Stateless.propTypes = {
   title: T.string.isRequired,
@@ -26,4 +26,3 @@ Stateless.propTypes = {
 }
 
 export default Stateless
-

@@ -1,6 +1,7 @@
-import React, {PropTypes as T} from 'react'
+import React from 'react'
+import T from 'prop-types'
 
-const Inputs = ({id, description, onDescriptionChanged, onSubmit}) =>
+const Inputs = ({ id, description, onDescriptionChanged, onSubmit }) =>
   <form onSubmit={onSubmit}>
     <div className='form-group'>
       <label>ID:</label>

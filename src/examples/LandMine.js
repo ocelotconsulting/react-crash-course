@@ -1,10 +1,8 @@
-import {PropTypes as T} from 'react'
+import T from 'prop-types'
 
-const LandMine = ({message}) => {
+const LandMine = ({ message }) => {
   throw new Error(message)
 }
-
-LandMine.displayName = 'LandMine'
 
 LandMine.propTypes = {
   message: T.string.isRequired

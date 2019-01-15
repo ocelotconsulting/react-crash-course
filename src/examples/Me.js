@@ -1,9 +1,8 @@
-import React, {PropTypes as T} from 'react'
+import React from 'react'
+import T from 'prop-types'
 
-const Me = ({name}) =>
+const Me = ({ name }) =>
   <h3>{`This example has been customized for: ${name}`}</h3>
-
-Me.displayName = 'Me'
 
 Me.propTypes = {
   name: T.string
